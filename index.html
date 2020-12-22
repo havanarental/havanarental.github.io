@@ -1,1 +1,167 @@
-Hell World
+ <!DOCTYPE html>
+<html>
+
+  <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, user-scalable=no" />
+      <title>Photo album - Home</title>
+      <link rel="stylesheet" href="public/lightgallery/css/lightgallery.css" />
+      <link rel="stylesheet" href="public/lightgallery/css/lg-exif.min.css" />
+      <link rel="stylesheet" href="public/videojs/video-js.min.css" />
+      <link rel="stylesheet" href="public/core.css" />
+      <link rel="stylesheet" href="public/theme.css" />
+  </head>
+
+  <body>
+
+    <header>
+      <a href="index.html">
+        <h1>Photo album</h1>
+      </a>
+    </header>
+    
+    <!--
+      Breadcrumbs of parent albums
+    -->
+    
+    <!--
+      Nested albums
+    -->
+    <ul id="galleries">
+    </ul>
+    
+    <!--
+      Render all thumbnails
+    -->
+    <ul id="media">
+        
+          <li data-src="media/large/IESC2116.jpg"
+              data-sub-html=""
+              data-download-url="media/large/IESC2116.jpg"
+              
+              data-filename="IESC2116.jpg"
+        
+            >
+            <a href="media/large/IESC2116.jpg">
+              <img src="media/thumbs/IESC2116.jpg"
+                   width="120"
+                   height="120"
+                   alt="IESC2116.jpg" />
+            </a>
+          </li>    
+          <li data-src="media/large/PNHE2700.jpg"
+              data-sub-html=""
+              data-download-url="media/large/PNHE2700.jpg"
+              
+              data-filename="PNHE2700.jpg"
+        
+            >
+            <a href="media/large/PNHE2700.jpg">
+              <img src="media/thumbs/PNHE2700.jpg"
+                   width="120"
+                   height="120"
+                   alt="PNHE2700.jpg" />
+            </a>
+          </li>    
+          <li data-src="media/large/FLXX4858.jpg"
+              data-sub-html="male chauvinism"
+              data-download-url="media/large/FLXX4858.jpg"
+              
+              data-filename="FLXX4858.jpg"
+        
+            >
+            <a href="media/large/FLXX4858.jpg">
+              <img src="media/thumbs/FLXX4858.jpg"
+                   width="120"
+                   height="120"
+                   alt="FLXX4858.jpg" />
+            </a>
+          </li>    
+          <li data-src="media/large/JYEU0150.jpg"
+              data-sub-html=""
+              data-download-url="media/large/JYEU0150.jpg"
+              
+              data-filename="JYEU0150.jpg"
+        
+            >
+            <a href="media/large/JYEU0150.jpg">
+              <img src="media/thumbs/JYEU0150.jpg"
+                   width="120"
+                   height="120"
+                   alt="JYEU0150.jpg" />
+            </a>
+          </li>    
+          <li data-src="media/large/KGBX0712.jpg"
+              data-sub-html=""
+              data-download-url="media/large/KGBX0712.jpg"
+              
+              data-filename="KGBX0712.jpg"
+        
+            >
+            <a href="media/large/KGBX0712.jpg">
+              <img src="media/thumbs/KGBX0712.jpg"
+                   width="120"
+                   height="120"
+                   alt="KGBX0712.jpg" />
+            </a>
+          </li>    
+          <li data-src="media/large/CZRJ9179.jpg"
+              data-sub-html="Close-up, studio shot of a young, beautiful blonde woman touching her lips. Developed from RAW; retouched with special care and attention. Small amount of grain added for best final impression."
+              data-download-url="media/large/CZRJ9179.jpg"
+              
+              data-filename="CZRJ9179.jpg"
+        
+            >
+            <a href="media/large/CZRJ9179.jpg">
+              <img src="media/thumbs/CZRJ9179.jpg"
+                   width="120"
+                   height="120"
+                   alt="CZRJ9179.jpg" />
+            </a>
+          </li></ul>
+    
+    <!--
+      Pagination
+    -->
+    
+    <!--
+      Zip file link
+    -->
+    
+    
+    <!--
+      Optional footer
+    -->
+    <!-- Video loader -->
+    <div id="videos">
+    </div>
+
+    <!-- jQuery -->
+    <script src="public/jquery.min.js"></script>
+    <!-- VideoJS -->
+    <script src="public/videojs/video.min.js"></script>
+    <!-- LightGallery -->
+    <script src="public/lightgallery/js/lightgallery.js"></script>
+    <script src="public/lightgallery/js/lg-autoplay.js"></script>
+    <script src="public/lightgallery/js/lg-pager.js"></script>
+    <script src="public/lightgallery/js/lg-thumbnail.js"></script>
+    <script src="public/lightgallery/js/lg-video.js"></script>
+    <script src="public/lightgallery/js/lg-exif.min.js"></script>
+
+    <script>
+      $(document).ready(function() {
+        $("#media").lightGallery({
+          thumbWidth: 80,
+          controls: true,
+          loop : false,
+          download: true,
+          counter: true,
+          videojs: true
+        });
+      });
+    </script>
+
+
+  </body>
+
+</html>
